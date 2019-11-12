@@ -1,0 +1,9 @@
+<div align="right">
+    {% load staticfiles %}
+    <img src="{{ data.photo.url }}" width="100" height="50"><br>
+   <span style="background: burlywood;font-family: 'Arial Black';font-size: medium;align-content: space-between">
+       Welcome {{ data.email }}
+   </span> <br>
+    <a href={% url 'logout' %}>
+    <button type="Submit">Logout</button></a>
+</div>

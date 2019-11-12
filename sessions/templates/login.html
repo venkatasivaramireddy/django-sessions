@@ -1,0 +1,11 @@
+
+<h1>Login Page</h1>
+<form action="{% url 'logincheck' %}" method="post">
+    {% csrf_token %}
+    <input type="email" required placeholder="EMail" name="email">
+    <input type="password" required placeholder="Password" name="password">
+    <button type="submit">Login</button>
+</form>
+
+<a href={% url 'main' %}>
+<button type="Submit" formaction="login">Register</button></a>

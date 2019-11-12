@@ -1,0 +1,14 @@
+
+{% if message %}
+    {{ message }}
+{% endif %}
+
+<h1> Registration Page</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+
+</form>
+<a href={% url 'login' %}>
+<button type="Submit" formaction="login">Login</button></a>
